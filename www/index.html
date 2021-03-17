@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src *;  
+	           script-src * 'unsafe-inline'; 
+			   style-src * 'unsafe-inline'; 
+			   img-src * data: content:;">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<meta name="color-scheme" content="light dark">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdWgu3MKgdqJyBFqh7bEAOmXpzwWRgVL0">
+	</script>
+
+	<link rel="stylesheet" href="./css/index.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="cordova.js"> </script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/libreria.js"></script>
+	<script src="./js/index.js"> </script>
+</head>
+
+
+<body>
+	<nav class="navbar">
+		<div class="container-fluid">
+			<span class="navbar-brand mb-0 h1" style="color: white;">Rilievi & Perizie</span>
+			<button type="button" id="btnLogout">Logout</button>
+		</div>
+	</nav>
+	<div id="wrapper">
+		<button id="btnScatta" class="button"><i class="fas fa-camera"></i> Fotocamera</button>
+		<button id="btnCerca" class="button"><i class="fas fa-search"></i> Cerca</button>
+		<!--<button id="btnScatta"><i class="fas fa-camera"></i>Fotocamera</button>
+		<button id="btnCerca"><i class="fas fa-search"></i>Cerca</button>
+		<button type="button" id="btnScatta" class="btn btn-secondary btn-sm"><i class="fas fa-camera"></i>Fotocamera</button>
+		<button type="button" id="btnCerca" class="btn btn-secondary btn-sm"><i class="fas fa-search"></i>Cerca</button>-->
+		<br>
+		<br>
+		<div class="mb-3">
+			<!--<textarea onfocus="this.value=''" type="text" name="overdueWindow" id="description" class="form-control"
+				rows="7">ADD DESCRIPTION</textarea>-->
+			<div id="boxImg" style="height: 60px;">
+
+			</div>
+			<div class="containerBtn">
+				<input type="button" id="btnInvia" class="button" value="INVIA DATI AL SERVER">
+			</div>
+		</div>
+		<div class="map"> </div>
+	</div>
+
+	<div class="dettagli center">
+		<div class="containerDetails">
+			<div class="info">
+				<form class="form">
+					<img id="imgDettagli">
+					<div id="idOp"></div>
+					<div id="latitudine"></div>
+					<div id="longitudine"></div>
+					<p id="desc"></p>
+					<input onfocus="this.value=''" type="text"
+						id="description"/>
+					<div class="containerBtn">
+						<input type="button" id="btnChiudi" class="button" value="CHIUDI">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

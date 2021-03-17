@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;  
+	           script-src * 'unsafe-inline'; 
+			   style-src * 'unsafe-inline'; 
+			   img-src * data: content:;">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<meta name="color-scheme" content="light dark">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Login</title>
+
+
+    <link rel="stylesheet" href="./login/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="cordova.js"> </script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/libreria.js"></script>
+    <script src="./login/login.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <form class="form">
+                        <span id="checkUser"><i class="fas fa-arrow-right"></i></span><input type="text"
+                            autocomplete="off" id="lUsername" class="username" placeholder="Username" required>
+                        <input type="password" autocomplete="off" id="lPwd" class="password" placeholder="Password"
+                            required>
+                        <input type="password" autocomplete="off" id="lNewPwd" class="password"
+                            placeholder="New password" required>
+                        <input type="button" id="btnLogin" class="button" value="LOGIN"><span class="return"><a href="#">BACK</a></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

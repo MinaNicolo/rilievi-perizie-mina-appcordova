@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+html, body{
+	height:100%;
+	background-color: #f876de;
+	background-image: linear-gradient(315deg, #f876de 0%, #b9d1eb 74%);
+}
+
+#wrapper {
+	text-align:center;
+}
+#wrapper .map{
+	margin: 0 auto;
+    width:354px;
+    height:300px;	
+    border-radius: 3%;
+}
+
+i{
+	font-size: 15px;
+	float: left;
+}
+
+#wrapper img{
+	margin:10px;
+}
+
+.containerBtn{
+    margin-top: 10px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button{
+    padding: 5px;
+    width: 12em;
+    height: 2em;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 14px;
+	margin-top: 10px;
+	line-height: normal;
+}
+
+#btnLogout{
+	padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+	color: white;
+}
+
+nav{
+	background: #222;
+}
+
+#btnInvia, #btnScatta, #btnCerca{
+	background-color: #d3d3d3;
+	background-image: linear-gradient(315deg, #d3d3d3 0%, #ee5253 74%);
+}
+
+/************************POPUP DETTAGLI*************************************/
+
+.dettagli{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color:rgba(0,0,0,0.7);
+	border-radius:10px;
+	display: none;
+	pointer-events:none;
+	opacity:0;
+	transform:translate(-50%,-50%) scale(0.5);
+}
+  
+.dettagli.show{
+	opacity:1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top:50%;
+	transform:translate(-50%,-50%) scale(1);
+	pointer-events: auto;
+}
+
+.containerDetails{
+	border: 4px;
+	text-align: center;
+	padding: 20px;
+	width: 420px;
+}
+  
+.center {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+  
+.info{
+	position: relative;
+	width: 345px;
+	height: 500px;
+	box-shadow: 20px 10px 50px rgba(0,0,0,0.5);
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+}
+.containerBtn{
+    display: flex;
+}
+.detTitle{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: white;
+}
+#btnChiudi{
+    padding: 5px;
+    width: 10em;
+    height: 2em;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+#imgDettagli{
+	max-height: 75px;
+	margin: 0 auto;
+}
+
+.divStyles{
+	color: white;
+	font-size: 14pt;
+}
+
+#description{
+	height: 70px;
+	border: 1px solid white;
+	width: 280px;
+	background:none;
+	color: white;
+	margin: 0 auto;
+	padding: 5px;
+	word-wrap: break-word;
+	font-size: 13pt;
+}
